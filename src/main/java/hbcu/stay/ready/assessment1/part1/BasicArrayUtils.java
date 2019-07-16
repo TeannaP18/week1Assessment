@@ -9,7 +9,7 @@ public class BasicArrayUtils {
      * @return the first element in the array
      */
     public static String getFirstElement(String[] stringArray) {
-        return null;
+        return stringArray[0];
     }
 
     /**
@@ -17,15 +17,22 @@ public class BasicArrayUtils {
      * @return the second element in the array
      */
     public static String getSecondElement(String[] stringArray) {
-        return null;
+        return stringArray[1];
     }
+
 
     /**
      * @param stringArray an array of String objects
      * @return stringArray with the elements in reverse order
      */
     public static String[] reverse(String[] stringArray) {
-        return null;
+        String[] response = new String[stringArray.length];
+        int reverseArrayIndex = 0;
+        for(int arrayIndex= stringArray.length-1; arrayIndex>= 0; arrayIndex--){
+            response[reverseArrayIndex] = stringArray[arrayIndex];
+            reverseArrayIndex++;
+        }
+        return response;
     }
 
     /**

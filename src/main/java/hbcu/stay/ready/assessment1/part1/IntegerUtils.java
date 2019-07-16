@@ -25,7 +25,12 @@ public class IntegerUtils {
      * @return true if the integer is even and false if it is not even.
      */
     public static Boolean isEven(Integer val) {
-        return null;
+        boolean pass = true;
+        boolean fail = false;
+        if (val % 2 == 0) return pass;
+        else { return fail;}
     }
 }
+
+
 
